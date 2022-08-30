@@ -17,6 +17,7 @@ const MarketingApp = () => {
   useEffect(() => {
     console.log("useEffect");
     const { onParentNavigate } = mount(ref.current, {
+      initialPath: history.location.pathname,
       onNavigate,
     });
 
